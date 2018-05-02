@@ -3,14 +3,7 @@
   "name": "ish-landing-page",
   "version": "1.0.0",
   "description": "An HTML landing page",
-  "keywords": [
-    "css",
-    "sass",
-    "html",
-    "responsive",
-    "theme",
-    "template"
-  ],
+  "keywords": ["css", "sass", "html", "responsive", "theme", "template"],
   "license": "MIT",
   "author": "William Robertson",
   "dependencies": {
