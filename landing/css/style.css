@@ -25,12 +25,24 @@ nav {
   padding-left: 2em;
 }
 
+.entrepreneurs {
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+  font-family: "Rajdhani", sans-serif;
+  margin-top: 3rem;
+}
+
 .input-field .helper-text::after {
   opacity: 1;
   position: absolute;
   top: 0;
   left: 0;
   padding-left: 12rem;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 /* border around email input */
@@ -49,6 +61,38 @@ input[type="search"]:not(.browser-default),
 textarea.materialize-textarea {
   background-color: transparent;
   border: 1px solid #6195ff;
+  border-radius: 0;
+  outline: none;
+  height: 3rem;
+  width: 100%;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  padding-left: 1px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-transition: border 0.3s, -webkit-box-shadow 0.3s;
+  transition: border 0.3s, -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s, border 0.3s;
+  transition: box-shadow 0.3s, border 0.3s, -webkit-box-shadow 0.3s;
+}
+/* border around email input */
+#form-landing > input:not([type]),
+input[type="text"]:not(.browser-default),
+input[type="password"]:not(.browser-default),
+input[type="email"]:not(.browser-default),
+input[type="url"]:not(.browser-default),
+input[type="time"]:not(.browser-default),
+input[type="date"]:not(.browser-default),
+input[type="datetime"]:not(.browser-default),
+input[type="datetime-local"]:not(.browser-default),
+input[type="tel"]:not(.browser-default),
+input[type="number"]:not(.browser-default),
+input[type="search"]:not(.browser-default),
+textarea.materialize-textarea {
+  background-color: transparent;
+  border: 1px solid #000000;
   border-radius: 0;
   outline: none;
   height: 3rem;
@@ -126,6 +170,10 @@ textarea.materialize-textarea {
   /* margin-top: 5rem; */
 }
 
+#cta-landing {
+  padding: 2rem;
+}
+
 #motto {
   margin: 9rem;
   color: black;
@@ -148,9 +196,18 @@ textarea.materialize-textarea {
 }
 
 #footer-section {
+  padding-top: 0;
   margin: 0;
   font-family: "Rajdhani", sans-serif;
   background: rgb(80, 80, 80);
+}
+
+/* footer on entrepreneurs landing page */
+#footer-landing {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  color: #fff;
+  background-color: #000000;
 }
 
 #social {
@@ -160,6 +217,14 @@ textarea.materialize-textarea {
 }
 #social > a {
   color: #fff;
+}
+#social-landing {
+  margin-right: auto;
+  padding-left: 2rem;
+  color: black;
+}
+#social-landing > a {
+  color: black;
 }
 
 .footer-follow {
@@ -186,6 +251,25 @@ textarea.materialize-textarea {
 /* Email submit */
 
 input:not([type]):focus:not([readonly]),
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="url"]:not(.browser-default):focus:not([readonly]),
+input[type="time"]:not(.browser-default):focus:not([readonly]),
+input[type="date"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+input[type="tel"]:not(.browser-default):focus:not([readonly]),
+input[type="number"]:not(.browser-default):focus:not([readonly]),
+input[type="search"]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #2570a1;
+  -webkit-box-shadow: 0 1px 0 0 #2570a1;
+  box-shadow: 0 1px 0 0 #2570a1;
+}
+
+/* Form on landing page */
+#form-landing > input:not([type]):focus:not([readonly]),
 input[type="text"]:not(.browser-default):focus:not([readonly]),
 input[type="password"]:not(.browser-default):focus:not([readonly]),
 input[type="email"]:not(.browser-default):focus:not([readonly]),
