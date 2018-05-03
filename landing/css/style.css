@@ -25,6 +25,16 @@ nav {
   padding-left: 2em;
 }
 
+#email-form,
+#first_name,
+#last_name {
+  color: black;
+  font-family: "Rajdhani", sans-serif;
+  max-width: 15rem;
+  margin-right: 0.5rem;
+  padding-left: 2em;
+}
+
 .entrepreneurs {
   display: flex;
   align-content: space-between;
@@ -98,8 +108,9 @@ textarea.materialize-textarea {
   height: 3rem;
   width: 100%;
   font-size: 16px;
+  font-family: "Rajdhani", sans-serif;
   margin: 0 0 8px 0;
-  padding-left: 1px;
+  padding-left: 2em;
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-box-sizing: content-box;

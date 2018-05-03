@@ -22,7 +22,7 @@ function submitForm(e) {
   // get values
   var firstname = getInputVal("first_name");
   var lastname = getInputVal("last_name");
-  var email = getInputVal("email");
+  var email = getInputVal("email-form");
   var message = getInputVal("textarea1");
   // save Entrepreneur
   saveEntrepreneur(firstname, lastname, email, message);
