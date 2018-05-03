@@ -9,8 +9,8 @@ var config = {
 };
 firebase.initializeApp(config);
 
-// reference messages collection
-var messagesRef = firebase.database().ref("messages");
+// reference ish-subscriber collection
+var messagesRef = firebase.database().ref("ish-subscribers");
 
 // listen for form submit
 document.getElementById("contactForm").addEventListener("submit", submitForm);
@@ -39,7 +39,7 @@ function getInputVal(id) {
   return document.getElementById(id).value;
 }
 
-// save message to firebase
+// save ish-subscriberto firebase
 function saveMessage(choice, email) {
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
