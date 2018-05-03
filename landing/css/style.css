@@ -1,0 +1,339 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav {
+  color: black;
+  background: #fff;
+  min-height: 10rem;
+  font-family: "Rajdhani", sans-serif;
+}
+
+#connect {
+  color: black;
+}
+
+#email {
+  color: #fff;
+  font-family: "Rajdhani", sans-serif;
+  max-width: 25rem;
+}
+
+#logo {
+  max-height: 5rem;
+  display: block;
+  float: left;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.brand-logo {
+  display: flex;
+  align-content: flex-start;
+  margin-left: 2rem;
+}
+.ish {
+  display: flex;
+  align-content: flex-start;
+  margin-left: 2rem;
+  max-height: 2rem;
+}
+
+#logo-container {
+  float: left;
+}
+
+.icon-block {
+  padding: 0 0 0 0;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+#cta-image {
+  max-width: 30vw;
+  margin: auto;
+  padding: 0.5rem;
+}
+
+#cta-section {
+  margin: 0 0 0 0;
+  min-width: 100vw;
+  font-family: "Rajdhani", sans-serif;
+  background: rgb(80, 80, 80);
+  background-color: rgb(80, 80, 80);
+  color: #fff;
+  margin-top: 5rem;
+}
+
+#motto {
+  margin: 2rem;
+  color: black;
+  background: white;
+  background-color: white;
+  font-family: "Rajdhani", sans-serif;
+}
+
+#getstarted {
+  border: 1px;
+  border-color: lightgrey;
+}
+
+#join {
+  max-width: 50rem;
+}
+
+#joinbutton {
+  max-width: 15rem;
+}
+
+#footer-section {
+  margin: 0;
+  font-family: "Rajdhani", sans-serif;
+  background: rgb(80, 80, 80);
+}
+
+/* Email submit */
+
+input:not([type]):focus:not([readonly]),
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="url"]:not(.browser-default):focus:not([readonly]),
+input[type="time"]:not(.browser-default):focus:not([readonly]),
+input[type="date"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+input[type="tel"]:not(.browser-default):focus:not([readonly]),
+input[type="number"]:not(.browser-default):focus:not([readonly]),
+input[type="search"]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #2570a1;
+  -webkit-box-shadow: 0 1px 0 0 #2570a1;
+  box-shadow: 0 1px 0 0 #2570a1;
+}
+
+/*------------------------------------*\
+	Call to Action - overlay
+\*------------------------------------*/
+
+.work {
+  position: relative;
+  padding: 20px;
+}
+
+.work > img {
+  width: 100%;
+}
+
+.work .overlay {
+  background: #1c1d21;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0;
+  -webkit-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.work:hover .overlay {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  opacity: 0.8;
+}
+
+.work .work-content {
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.work .work-content h5 {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  opacity: 0;
+  color: #fff;
+  margin-bottom: 10px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.work:hover .work-content h5 {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.work .work-content span {
+  display: block;
+  text-transform: uppercase;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  opacity: 0;
+  color: #6195ff;
+  margin-bottom: 5px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.work:hover .work-content span {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.work .work-link {
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0;
+  -webkit-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+.work .work-link a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #6195ff;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+}
+
+.work:hover .work-link {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+
+/* Preload */
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 99999;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 601px) {
+  #cta-image {
+    max-width: 80vw;
+    margin: auto;
+    padding: 0.5rem;
+  }
+  .ish {
+    margin-top: 1rem;
+  }
+}
+
+.preloader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.preloader span {
+  display: inline-block;
+  background-color: black;
+  width: 25px;
+  height: 25px;
+  -webkit-animation: 1s preload ease-in-out infinite;
+  animation: preload 1s ease-in-out infinite;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  border-radius: 50%;
+}
+
+.preloader span:nth-child(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.preloader span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.preloader span:nth-child(3) {
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+
+.preloader span:nth-child(4) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+@-webkit-keyframes preload {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+
+@keyframes preload {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+
+/* Mobile */
+
+/* @media only screen and (min-width: 0) html {
+  font-size: 14px;
+}
+#cta-image {
+  max-width: 30vw;
+  margin: auto;
+  padding: 0.5rem;
+} */
