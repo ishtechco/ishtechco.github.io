@@ -9,7 +9,7 @@
 nav {
   color: black;
   background: #fff;
-  min-height: 10rem;
+  min-height: 15rem;
   font-family: "Rajdhani", sans-serif;
 }
 
@@ -20,7 +20,63 @@ nav {
 #email {
   color: #fff;
   font-family: "Rajdhani", sans-serif;
-  max-width: 25rem;
+  max-width: 15rem;
+  margin-right: 0.5rem;
+  padding-left: 2em;
+}
+
+.input-field .helper-text::after {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 12rem;
+}
+
+/* border around email input */
+input:not([type]),
+input[type="text"]:not(.browser-default),
+input[type="password"]:not(.browser-default),
+input[type="email"]:not(.browser-default),
+input[type="url"]:not(.browser-default),
+input[type="time"]:not(.browser-default),
+input[type="date"]:not(.browser-default),
+input[type="datetime"]:not(.browser-default),
+input[type="datetime-local"]:not(.browser-default),
+input[type="tel"]:not(.browser-default),
+input[type="number"]:not(.browser-default),
+input[type="search"]:not(.browser-default),
+textarea.materialize-textarea {
+  background-color: transparent;
+  border: 1px solid #6195ff;
+  border-radius: 0;
+  outline: none;
+  height: 3rem;
+  width: 100%;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  padding-left: 1px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-transition: border 0.3s, -webkit-box-shadow 0.3s;
+  transition: border 0.3s, -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s, border 0.3s;
+  transition: box-shadow 0.3s, border 0.3s, -webkit-box-shadow 0.3s;
+}
+
+#choice {
+  font-family: "Rajdhani", sans-serif;
+}
+#subscribe {
+  color: #fff;
+  background: #6195ff;
+}
+.alert {
+  background: #79c879;
+  margin-bottom: 10px;
+  display: none;
 }
 
 #logo {
@@ -67,11 +123,11 @@ nav {
   background: rgb(80, 80, 80);
   background-color: rgb(80, 80, 80);
   color: #fff;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 }
 
 #motto {
-  margin: 2rem;
+  margin: 9rem;
   color: black;
   background: white;
   background-color: white;
@@ -97,6 +153,36 @@ nav {
   background: rgb(80, 80, 80);
 }
 
+#social {
+  margin-right: auto;
+  padding-left: 5rem;
+  color: #fff;
+}
+#social > a {
+  color: #fff;
+}
+
+.footer-follow {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-follow li {
+  /* display: inline-block; */
+  margin-right: 10px;
+  margin-bottom: 13px;
+}
+
+.footer-follow li a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #6195ff;
+  color: #fff;
+}
 /* Email submit */
 
 input:not([type]):focus:not([readonly]),
