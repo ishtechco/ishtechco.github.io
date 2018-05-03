@@ -24,13 +24,15 @@ nav {
   margin-right: 0.5rem;
   padding-left: 2em;
 }
-
-#email-form,
 #first_name,
 #last_name {
   color: black;
   font-family: "Rajdhani", sans-serif;
-  max-width: 15rem;
+  padding-left: 1em;
+}
+#email-form {
+  color: black;
+  font-family: "Rajdhani", sans-serif;
   margin-right: 0.5rem;
   padding-left: 2em;
 }
