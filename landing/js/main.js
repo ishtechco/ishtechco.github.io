@@ -1,11 +1,11 @@
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyCyYe6-iGDVsYhCm2p0PnSIHubaBw7uHDQ",
-  authDomain: "ish-contact.firebaseapp.com",
-  databaseURL: "https://ish-contact.firebaseio.com",
-  projectId: "ish-contact",
+  apiKey: "AIzaSyAw0LENyivnQuCMS1TTuwi5FH9Izdvcyk8",
+  authDomain: "ishtechco-landing.firebaseapp.com",
+  databaseURL: "https://ishtechco-landing.firebaseio.com",
+  projectId: "ishtechco-landing",
   storageBucket: "",
-  messagingSenderId: "636022481161"
+  messagingSenderId: "277722953042"
 };
 firebase.initializeApp(config);
 
