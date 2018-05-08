@@ -227,7 +227,6 @@ textarea.materialize-textarea {
 #footer-section {
   padding-top: 0;
   margin: 0;
-  ;
   font-family: "Rajdhani", sans-serif;
   background: rgb(80, 80, 80);
 }
@@ -235,7 +234,6 @@ textarea.materialize-textarea {
 #footer-copyright {
   font-size: 1rem;
 }
-
 
 /* footer on entrepreneurs landing page */
 #footer-landing {
@@ -678,7 +676,7 @@ input.invalid {
 
 /* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -695,21 +693,14 @@ input.invalid {
 
 /* Style the indicator (dot/circle) */
 .container .checkmark:after {
- top: 9px;
-left: 9px;
-width: 8px;
-height: 8px;
-border-radius: 50%;
-background: white;
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
-</style>
-/* Mobile */
 
-/* @media only screen and (min-width: 0) html {
-  font-size: 14px;
+.survey {
+  min-height: 55vh;
 }
-#cta-image {
-  max-width: 30vw;
-  margin: auto;
-  padding: 0.5rem;
-} */
