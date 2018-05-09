@@ -74,13 +74,6 @@ window.onclick = function(event) {
   }
 };
 
-// Login Function
-function login() {
-  var userEMail = document.getElementById("email_field").value;
-  var userPass = document.getElementById("password_field").value;
-
-  window.alert(userEMail + " " + userPass);
-}
 // Modal form controls
 // $(document).ready(function() {
 //if you wish to keep both the divs hidden by default then dont forget to hide //them
