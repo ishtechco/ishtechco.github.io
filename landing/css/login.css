@@ -1,0 +1,12 @@
+.main-div,
+.loggedin {
+  display: none;
+}
+.main-div input {
+  display: block;
+}
+
+.main-div button,
+.loggedin-div button {
+  display: block;
+}
